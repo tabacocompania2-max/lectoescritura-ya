@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Play } from "lucide-react";
 import productSpread from "@/assets/product-spread.jpg";
 
-const DACAST_SRC = "https://iframe.dacast.com/vod/d7bf5532-39cf-f838-cfb6-4aab8c1f263f/8372e8c5-e09a-4c23-a269-505835b1bf81";
+const DACAST_SRC = "https://vimeo.com/1177912788?share=copy&fl=sv&fe=ci";
 
 const ProductVideoSection = () => {
   const [playing, setPlaying] = useState(false);
