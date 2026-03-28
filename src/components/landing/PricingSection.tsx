@@ -85,7 +85,7 @@ const PricingSection = () =>
             <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg px-10 py-6 rounded-xl shadow-float w-full sm:w-auto">
               <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-center mx-0 my-[8px] py-0 px-0 font-mono">QUIERO EL PROGRAMA COMPLETO
               <ShoppingCart className="mr-2 w-5 h-5" />
-                QUIERO EL PROGRAMA COMPLETO
+                LO QUIERO YA MISMO
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
             </Button>
