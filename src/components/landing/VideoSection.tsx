@@ -7,7 +7,7 @@ import videoThumb2 from "@/assets/video-thumb-2.webp";
 const videos = [
   {
     thumb: videoThumb1,
-    src: "https://iframe.dacast.com/vod/592280d6-f4cf-e74b-ad87-72de9cf6c3f2/f1136951-5f1f-462b-bbaa-52f32c5af3fe",
+    src: "https://vimeo.com/1177900310?share=copy&fl=sv&fe=ci",
     caption: "Mamá enseñando a su hijo de 5 años con el método — mira cómo se concentra y disfruta.",
   },
   {
