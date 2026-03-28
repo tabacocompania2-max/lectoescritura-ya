@@ -12,7 +12,7 @@ const videos = [
   },
   {
     thumb: videoThumb2,
-    src: "https://iframe.dacast.com/vod/592280d6-f4cf-e74b-ad87-72de9cf6c3f2/9d214bb4-3e68-4603-98b6-5f0f838ce105",
+    src: "https://vimeo.com/1177900287?share=copy&fl=sv&fe=ci",
     caption: "Padre e hijo practicando juntos — en pocos minutos al día, los avances son reales.",
   },
 ];
