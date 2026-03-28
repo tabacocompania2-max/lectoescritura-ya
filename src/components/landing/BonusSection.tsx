@@ -65,11 +65,9 @@ const BonusSection = () => (
           Valor total de los bonos: <span className="line-through font-bold">$74.96</span>
         </p>
         <p className="text-lg font-bold text-secondary">Incluidos gratis con tu compra hoy</p>
-        <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg px-8 py-6 rounded-xl shadow-float">
-          <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+        <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg px-8 py-6 rounded-xl shadow-float" onClick={() => document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth' })}>
             QUIERO APROVECHAR LOS BONOS
             <ArrowRight className="ml-2 w-5 h-5" />
-          </a>
         </Button>
         <p className="text-xs text-muted-foreground">Acceso inmediato · Garantía 7 días · Sin riesgo</p>
       </div>
