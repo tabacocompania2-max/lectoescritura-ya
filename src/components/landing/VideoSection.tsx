@@ -6,11 +6,6 @@ import videoThumb2 from "@/assets/video-thumb-2.webp";
 
 const videos = [
   {
-    thumb: videoThumb1,
-    src: "https://player.vimeo.com/video/1177912788?autoplay=1",
-    caption: "Mamá enseñando a su hijo de 5 años con el método — mira cómo se concentra y disfruta.",
-  },
-  {
     thumb: videoThumb2,
     src: "https://player.vimeo.com/video/1177900310?autoplay=1",
     caption: "Padre e hijo practicando juntos — en pocos minutos al día, los avances son reales.",
@@ -68,7 +63,7 @@ const VideoSection = () => (
           Familias reales usando el programa con sus hijos.
         </p>
       </div>
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 gap-8">
         {videos.map((v, i) => (
           <VideoCard key={i} {...v} index={i} />
         ))}
