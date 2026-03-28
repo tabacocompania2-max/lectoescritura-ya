@@ -68,7 +68,7 @@ const VideoSection = () => (
           Familias reales usando el programa con sus hijos.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-3 gap-8">
         {videos.map((v, i) => (
           <VideoCard key={i} {...v} index={i} />
         ))}
