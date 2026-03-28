@@ -23,7 +23,7 @@ const bonusItems = [
 ];
 
 const PricingSection = () => (
-  <section className="py-16 px-4 bg-primary/5">
+  <section id="pricing-section" className="py-16 px-4 bg-primary/5">
     <div className="container max-w-4xl mx-auto space-y-8">
       <div className="text-center">
         <span className="text-primary font-bold text-sm uppercase tracking-wider">Precio especial por tiempo limitado</span>
