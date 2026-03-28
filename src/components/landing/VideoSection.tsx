@@ -53,7 +53,7 @@ const VideoCard = ({ thumb, src, caption, index }: { thumb: string; src: string;
 };
 
 const VideoSection = () => (
-  <section className="py-16 px-4 bg-muted/50">
+  <section id="metodo-en-accion" className="py-16 px-4 bg-muted/50">
     <div className="container max-w-5xl mx-auto space-y-8">
       <div className="text-center">
         <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground">
