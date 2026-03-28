@@ -83,8 +83,8 @@ const PricingSection = () =>
             <CountdownTimer />
 
             <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg px-10 py-6 rounded-xl shadow-float w-full sm:w-auto">
-              <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
-                <ShoppingCart className="mr-2 w-5 h-5" />
+              <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-center mx-0 my-[8px] px-[30px] py-0">QUIERO EL PROGRAMA
+COMPLETO<ShoppingCart className="mr-2 w-5 h-5" />
                 QUIERO EL PROGRAMA COMPLETO
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
