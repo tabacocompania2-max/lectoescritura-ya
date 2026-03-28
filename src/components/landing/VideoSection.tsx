@@ -13,7 +13,7 @@ const videos = [
   {
     thumb: videoThumb2,
     src: "https://iframe.dacast.com/vod/592280d6-f4cf-e74b-ad87-72de9cf6c3f2/9d214bb4-3e68-4603-98b6-5f0f838ce105",
-    caption: "Padre e hija practicando juntos — en pocos minutos al día, los avances son reales.",
+    caption: "Padre e hijo practicando juntos — en pocos minutos al día, los avances son reales.",
   },
 ];
 
