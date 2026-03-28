@@ -39,11 +39,9 @@ const HeroSection = () => (
               </li>
             ))}
           </ul>
-          <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg px-8 py-6 rounded-xl shadow-float">
-            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg px-8 py-6 rounded-xl shadow-float" onClick={() => document.getElementById('metodo-en-accion')?.scrollIntoView({ behavior: 'smooth' })}>
               Quiero ayudar a mi hijo hoy
               <ArrowRight className="ml-2 w-5 h-5" />
-            </a>
           </Button>
           <p className="text-xs text-muted-foreground">
             Acceso inmediato · Garantía de 7 días · Pago seguro
