@@ -8,7 +8,7 @@ const videos = [
   {
     thumb: videoThumb2,
     src: "https://player.vimeo.com/video/1177900310?autoplay=1",
-    caption: "Padre e hijo practicando juntos — en pocos minutos al día, los avances son reales.",
+    caption: "Padres e hijos practicando juntos — en pocos minutos al día, los avances son reales.",
   },
   {
     thumb: videoThumb1,
