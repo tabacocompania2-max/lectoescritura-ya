@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
-import productSpread from "@/assets/product-spread.jpg";
+import productSpread from "@/assets/product-spread-opt.webp";
 
 const DACAST_SRC = "https://player.vimeo.com/video/1177912788?autoplay=1";
 

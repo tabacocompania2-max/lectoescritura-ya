@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { AlertCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import problemCollage from "@/assets/problem-collage.webp";
+import problemCollage from "@/assets/problem-collage-sm.webp";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
@@ -64,7 +64,7 @@ const ProblemSection = () => (
         </div>
 
         <div className="flex flex-col items-center gap-6">
-          <img src={problemCollage} alt="Niño frustrado intentando escribir" className="rounded-2xl shadow-float w-full max-w-md" />
+          <img src={problemCollage} alt="Niño frustrado intentando escribir" className="rounded-2xl shadow-float w-full max-w-md" loading="lazy" width={564} height={451} />
           <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg px-8 py-6 rounded-xl shadow-float" onClick={() => document.getElementById('metodo-en-accion')?.scrollIntoView({ behavior: 'smooth' })}>
               SÍ, QUIERO LA SOLUCIÓN
               <ArrowRight className="ml-2 w-5 h-5" />

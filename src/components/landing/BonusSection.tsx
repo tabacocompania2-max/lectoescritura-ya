@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Gift, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import bonus1Image from "@/assets/bonus-1-actividades.png";
+import bonus1Image from "@/assets/bonus-1-actividades-opt.webp";
 import bonus2Image from "@/assets/bonus-2-plan30dias.webp";
 import bonus3Image from "@/assets/bonus-3-planillas.webp";
 import bonus4Image from "@/assets/bonus-4-diploma.webp";
@@ -48,7 +48,7 @@ const BonusSection = () => (
             </div>
             <h3 className="text-lg font-heading font-bold text-foreground mb-2">{b.title}</h3>
             {b.image && (
-              <img src={b.image} alt={b.title} className="w-full h-40 object-cover rounded-lg mb-3" />
+              <img src={b.image} alt={b.title} className="w-full h-40 object-cover rounded-lg mb-3" loading="lazy" width={462} height={160} />
             )}
             <p className="text-sm text-muted-foreground flex-1">{b.desc}</p>
             <div className="mt-3 flex items-center gap-2">
