@@ -82,13 +82,15 @@ const PricingSection = () =>
 
             <CountdownTimer />
 
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg px-10 py-6 rounded-xl shadow-float w-full sm:w-auto">
-              <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-center mx-0 py-0 font-mono my-[11px] px-[15px]">LO QUIERO HOY
-              <ShoppingCart className="mr-2 w-5 h-5" />
-                ¡LO QUIERO HOY!
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
-            </Button>
+            <motion.div animate={{ scale: [1, 1.05, 1] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}>
+              <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-base sm:text-lg px-6 sm:px-10 py-6 rounded-xl shadow-float w-full max-w-sm mx-auto">
+                <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+                  <ShoppingCart className="mr-2 w-5 h-5 shrink-0" />
+                  ¡LO QUIERO HOY!
+                  <ArrowRight className="ml-2 w-5 h-5 shrink-0" />
+                </a>
+              </Button>
+            </motion.div>
             <p className="text-xs text-muted-foreground">Pago 100% seguro · Acceso inmediato · Garantía 7 días</p>
           </div>
         </div>

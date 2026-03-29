@@ -65,10 +65,12 @@ const ProblemSection = () => (
 
         <div className="flex flex-col items-center gap-6">
           <img src={problemCollage} alt="Niño frustrado intentando escribir" className="rounded-2xl shadow-float w-full max-w-md" loading="lazy" width={564} height={451} />
-          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-lg px-8 py-6 rounded-xl shadow-float" onClick={() => document.getElementById('metodo-en-accion')?.scrollIntoView({ behavior: 'smooth' })}>
+          <motion.div animate={{ scale: [1, 1.05, 1] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}>
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-base sm:text-lg px-6 sm:px-8 py-6 rounded-xl shadow-float w-full max-w-sm" onClick={() => document.getElementById('metodo-en-accion')?.scrollIntoView({ behavior: 'smooth' })}>
               SÍ, QUIERO LA SOLUCIÓN
-              <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
+              <ArrowRight className="ml-2 w-5 h-5 shrink-0" />
+            </Button>
+          </motion.div>
           <p className="text-xs text-muted-foreground">Acceso inmediato · Garantía 7 días · Pago seguro</p>
         </div>
       </div>
