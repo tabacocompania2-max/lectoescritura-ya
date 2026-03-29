@@ -38,7 +38,7 @@ const VideoCard = ({ thumb, src, caption, index }: { thumb: string; src: string;
           />
         ) : (
           <button onClick={() => setPlaying(true)} className="w-full h-full relative group cursor-pointer">
-            <img src={thumb} alt={`Demostración ${index + 1}`} className="w-full h-full object-cover" />
+            <img src={thumb} alt={`Demostración ${index + 1}`} className="w-full h-full object-cover" loading="lazy" width={560} height={315} />
             <div className="absolute inset-0 bg-foreground/30 group-hover:bg-foreground/40 transition-colors flex items-center justify-center">
               <div className="bg-primary text-primary-foreground rounded-full p-4 shadow-lg group-hover:scale-110 transition-transform">
                 <Play className="w-8 h-8" fill="currentColor" />

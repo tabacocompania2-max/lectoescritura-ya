@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Check, ShoppingCart, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroProduct from "@/assets/hero-product.webp";
+import heroProduct from "@/assets/hero-product-sm.webp";
 import CountdownTimer from "./CountdownTimer";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
@@ -46,7 +46,7 @@ const PricingSection = () =>
 
         <div className="p-8 space-y-6">
           <div className="flex justify-center">
-            <img src={heroProduct} alt="Material de lectoescritura" className="w-48 rounded-xl shadow-lg" />
+            <img src={heroProduct} alt="Material de lectoescritura" className="w-48 rounded-xl shadow-lg" loading="lazy" width={192} height={192} />
           </div>
 
           <div>

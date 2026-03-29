@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
-import productSpread from "@/assets/product-spread.jpg";
+import productSpread from "@/assets/product-spread-opt.webp";
 
 const DACAST_SRC = "https://player.vimeo.com/video/1177912788?autoplay=1";
 
@@ -29,7 +29,7 @@ const ProductVideoSection = () => {
             />
           ) : (
             <button onClick={() => setPlaying(true)} className="w-full h-full relative group cursor-pointer">
-              <img src={productSpread} alt="Vista previa del material" className="w-full h-full object-cover" />
+              <img src={productSpread} alt="Vista previa del material" className="w-full h-full object-cover" width={600} height={338} />
               <div className="absolute inset-0 bg-foreground/30 group-hover:bg-foreground/40 transition-colors flex items-center justify-center">
                 <div className="bg-primary text-primary-foreground rounded-full p-5 shadow-lg group-hover:scale-110 transition-transform">
                   <Play className="w-10 h-10" fill="currentColor" />

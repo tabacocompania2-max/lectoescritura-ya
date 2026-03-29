@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, Mail, HelpCircle } from "lucide-react";
-import guaranteeBadge from "@/assets/guarantee-badge.jpg";
+import guaranteeBadge from "@/assets/guarantee-badge-opt.webp";
 
 const GuaranteeSection = () => (
   <section className="py-16 px-4">
@@ -11,7 +11,7 @@ const GuaranteeSection = () => (
         viewport={{ once: true }}
         className="bg-card rounded-2xl p-8 md:p-12 shadow-float border-2 border-secondary/30 text-center space-y-6"
       >
-        <img src={guaranteeBadge} alt="Garantía de 7 días" className="w-28 h-28 mx-auto rounded-full object-cover" />
+        <img src={guaranteeBadge} alt="Garantía de 7 días" className="w-28 h-28 mx-auto rounded-full object-cover" loading="lazy" width={112} height={112} />
         <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground">
           Compra sin riesgo: Garantía total de 7 días
         </h2>
