@@ -5,6 +5,18 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react/jsx-runtime'],
+          'router': ['react-router-dom'],
+          'query': ['@tanstack/react-query'],
+          'motion': ['framer-motion'],
+        },
+      },
+    },
+  },
   server: {
     host: "::",
     port: 8080,
