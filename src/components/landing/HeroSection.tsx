@@ -56,7 +56,7 @@ const HeroSection = () => (
           transition={{ duration: 0.6, delay: 0.2 }}
           className="relative"
         >
-          <img src={childLearning} alt="Niño aprendiendo a escribir con su mamá" className="rounded-2xl shadow-float w-full" width={583} height={874} />
+          <img src={childLearning} alt="Niño aprendiendo a escribir con su mamá" className="rounded-2xl shadow-float w-full" width={583} height={874} fetchPriority="high" />
           <img src={heroProduct} alt="Material de lectoescritura imprimible" className="absolute -bottom-6 -right-4 w-40 md:w-52 rounded-xl shadow-lg border-4 border-card" width={266} height={266} />
           <div className="absolute -bottom-10 left-4 bg-secondary text-secondary-foreground text-sm font-bold px-4 py-2 rounded-full shadow-lg">
             +2,500 familias confían en este método
