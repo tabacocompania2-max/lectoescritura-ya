@@ -9,24 +9,27 @@ import bonus4Image from "@/assets/bonus-4-diploma.webp";
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
 const bonuses = [
-  { num: "1", title: "Actividades de Refuerzo Extra", desc: "Crucigramas, sopas de letras y juegos que consolidan lo aprendido — tu hijo practica sin darse cuenta de que está aprendiendo.", value: "$19.99", image: bonus1Image },
-  { num: "2", title: "Plan Guiado de 30 Días", desc: "Calendario exacto de qué hacer cada día. Abres, sigues el plan, y listo. Sin improvisar, sin perder tiempo decidiendo.", value: "$29.99", image: bonus2Image },
-  { num: "3", title: "Planillas de Seguimiento", desc: "Ve el progreso de tu hijo semana a semana. Saber exactamente dónde está y cuánto ha avanzado te da tranquilidad y motivación.", value: "$14.99", image: bonus3Image },
-  { num: "4", title: "Diploma Editable Premium", desc: "Un reconocimiento real con su nombre. Tu hijo lo cuelga orgulloso — y tú sabes que lo logró gracias a ti.", value: "$9.99", image: bonus4Image },
+  { num: "1", title: "Actividades de Refuerzo Extra", desc: "Crucigramas, sopas de letras y juegos que consolidan lo aprendido — tu hijo practica sin darse cuenta.", value: "$19.99", image: bonus1Image },
+  { num: "2", title: "Plan Guiado de 30 Días", desc: "Calendario exacto de qué hacer cada día. Abres, sigues el plan, y listo. Sin improvisar.", value: "$29.99", image: bonus2Image },
+  { num: "3", title: "Planillas de Seguimiento", desc: "Ve el progreso semana a semana. Saber dónde está tu hijo te da tranquilidad.", value: "$14.99", image: bonus3Image },
+  { num: "4", title: "Diploma Editable Premium", desc: "Un reconocimiento real con su nombre. Tu hijo lo cuelga orgulloso.", value: "$9.99", image: bonus4Image },
 ];
 
 const BonusSection = () => (
-  <section className="py-16 px-4 bg-muted/50">
-    <div className="container max-w-5xl mx-auto space-y-10">
-      <div className="text-center">
+  <section className="py-12 md:py-16 px-4 bg-muted/50">
+    <div className="container max-w-5xl mx-auto space-y-8">
+      <div className="text-center space-y-3">
         <span className="inline-flex items-center gap-1 text-primary font-bold text-sm uppercase tracking-wider">
           <Gift className="w-4 h-4" /> Incluido sin costo adicional
         </span>
-        <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-2">
-          Además, hoy recibes GRATIS estos 4 recursos que hacen el proceso más fácil y efectivo:
+        <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground">
+          Además, hoy recibes GRATIS estos 4 recursos:
         </h2>
-        <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-          Herramientas que eliminan las excusas y hacen que tú y tu hijo avancen sin tropiezos.
+        <p className="text-lg text-foreground font-bold">
+          Esto elimina las excusas.
+        </p>
+        <p className="text-base text-muted-foreground">
+          No tienes que improvisar. No tienes que buscar nada más.
         </p>
       </div>
 
@@ -66,9 +69,11 @@ const BonusSection = () => (
         </p>
         <p className="text-lg font-bold text-secondary">Incluidos gratis con tu compra hoy</p>
         <motion.div animate={{ scale: [1, 1.05, 1] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}>
-          <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-base sm:text-lg px-6 sm:px-8 py-6 rounded-xl shadow-float w-full max-w-sm" onClick={() => document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth' })}>
-            QUIERO APROVECHAR LOS BONOS
-            <ArrowRight className="ml-2 w-5 h-5 shrink-0" />
+          <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-base sm:text-lg px-6 sm:px-8 py-6 rounded-xl shadow-float w-full max-w-sm mx-auto">
+            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+              Empieza hoy
+              <ArrowRight className="ml-2 w-5 h-5 shrink-0" />
+            </a>
           </Button>
         </motion.div>
         <p className="text-xs text-muted-foreground">Acceso inmediato · Garantía 7 días · Sin riesgo</p>
