@@ -2,7 +2,6 @@ import { lazy, Suspense } from "react";
 import TopBar from "@/components/landing/TopBar";
 import HeroSection from "@/components/landing/HeroSection";
 
-const EmotionalBreak = lazy(() => import("@/components/landing/EmotionalBreak"));
 const ProductVideoSection = lazy(() => import("@/components/landing/ProductVideoSection"));
 const ProblemSection = lazy(() => import("@/components/landing/ProblemSection"));
 const TransitionSection = lazy(() => import("@/components/landing/TransitionSection"));
@@ -23,13 +22,10 @@ const Index = () => (
     <HeroSection />
     <Suspense fallback={<div className="min-h-[200px]" />}>
       <ProductVideoSection />
-      <EmotionalBreak text="Y aquí es donde todo empeora…" />
       <ProblemSection />
-      <EmotionalBreak text="Porque esto no se queda igual…" variant="strong" />
       <TransitionSection />
       <HowItWorks />
       <VideoSection />
-      <EmotionalBreak text="Cada día que pasa, la brecha crece." />
       <ContentSection />
       <BonusSection />
       <TestimonialsSection />

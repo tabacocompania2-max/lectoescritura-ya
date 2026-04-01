@@ -5,51 +5,38 @@ import heroProduct from "@/assets/hero-product-sm.webp";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
+const promises = [
+  "Sin ser maestro — cualquier padre puede hacerlo",
+  "Solo 15 minutos al día, sin estrés ni presión",
+  "Más de 2,500 familias ya lo están usando con éxito",
+];
+
 const HeroSection = () => (
-  <section className="py-10 md:py-16 px-4">
+  <section className="py-12 md:py-20 px-4">
     <div className="container max-w-6xl mx-auto">
       <div className="grid md:grid-cols-2 gap-10 items-center">
-        <div className="space-y-5 animate-fade-in">
+        <div className="space-y-6 animate-fade-in">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight text-foreground">
-            Si tu hijo tiene 5 o 6 años y aún no lee, esto ya es una <span className="text-primary">señal de alerta</span>
+            Si tu hijo evita leer, se frustra o dice "no puedo"… esto <span className="text-primary">NO es su culpa</span>
           </h1>
-
-          <p className="text-lg md:text-xl text-muted-foreground font-semibold leading-snug">
-            Porque cada día que pasa sin leer, pierde confianza…
-            <br />y tú lo estás viendo.
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            La mayoría de los padres sienten culpa, frustración y miedo de que su hijo se quede atrás. Pero el problema no es tu hijo ni tú — es que nadie te dio un método claro para enseñarle.
           </p>
-
-          <p className="text-base text-foreground font-bold">
-            No es que no pueda. Es que nadie le está enseñando bien.
-          </p>
-
           <p className="text-base text-muted-foreground">
-            Y mientras tú sigues intentando lo mismo… otros niños ya están avanzando.
+            Descubre el sistema paso a paso que ya ayudó a más de 2,500 familias a enseñar a leer a sus hijos en casa — en solo 15 minutos al día.
           </p>
-
-          <p className="text-lg text-primary font-bold">
-            Eso se puede cambiar en semanas, si usas el método correcto.
-          </p>
-
-          <ul className="space-y-2">
-            {[
-              "Sin ser maestro — cualquier padre puede hacerlo",
-              "Solo 15 minutos al día, sin estrés ni presión",
-              "Más de 2,500 familias ya lo usan con éxito",
-            ].map((p, i) => (
-              <li key={i} className="flex items-start gap-2 text-foreground text-sm">
+          <ul className="space-y-3">
+            {promises.map((p, i) => (
+              <li key={i} className="flex items-start gap-2 text-foreground">
                 <CheckCircle className="w-5 h-5 text-secondary mt-0.5 shrink-0" />
                 <span>{p}</span>
               </li>
             ))}
           </ul>
-
           <div className="animate-cta-pulse">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-base sm:text-lg px-6 sm:px-8 py-6 rounded-xl shadow-float w-full max-w-sm">
-              <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
-                Quiero ayudar a mi hijo hoy
-                <ArrowRight className="ml-2 w-5 h-5 shrink-0" />
-              </a>
+            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold text-base sm:text-lg px-6 sm:px-8 py-6 rounded-xl shadow-float w-full max-w-sm" onClick={() => document.getElementById('metodo-en-accion')?.scrollIntoView({ behavior: 'smooth' })}>
+              Quiero ayudar a mi hijo hoy
+              <ArrowRight className="ml-2 w-5 h-5 shrink-0" />
             </Button>
           </div>
           <p className="text-xs text-muted-foreground">
